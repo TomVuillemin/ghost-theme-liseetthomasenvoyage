@@ -547,6 +547,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     position: relative;
     z-index: 50;
     margin-top: -150px;
+    font-weight: 300;
 }
 /* ^ Required to make .post-full-content:before/after z-index stacking work */
 
