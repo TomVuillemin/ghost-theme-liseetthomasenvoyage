@@ -659,10 +659,6 @@ The first (most recent) post in the list is styled to be bigger than the others 
     transform: rotate(5deg);
 }
 
-.no-image .post-full-content {
-    padding-top: 0;
-}
-
 .no-image .post-full-content:before,
 .no-image .post-full-content:after {
     display: none;
@@ -756,6 +752,17 @@ Usage (In Ghost edtior):
     width: 100vw;
 }
 
+.post-full-content img[src$="#left"] {
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+}
+
+.post-full-content img[src$="#right"] {
+    width: 30%;
+    float: right;
+    margin-left: 3%;
+}
 
 /* Image captions
 
@@ -855,25 +862,24 @@ Usage (In Ghost editor):
 .post-full-content h4,
 .post-full-content h5,
 .post-full-content h6 {
-    color: color(var(--darkgrey) l(-5%));
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: var(--blue);
+    font-family: Yesteryear,cursive;
+    font-weight: 400;
 }
 
 .post-full-content h1 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 4.6rem;
-    font-weight: 700;
+    font-size: 6rem;
 }
 @media (max-width: 500px) {
     .post-full-content h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
 }
 
 .post-full-content h2 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 3.6rem;
-    font-weight: 700;
+    font-size: 4.5rem;
 }
 @media (max-width: 500px) {
     .post-full-content h2 {
@@ -883,8 +889,7 @@ Usage (In Ghost editor):
 
 .post-full-content h3 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: 3.3rem;
 }
 @media (max-width: 500px) {
     .post-full-content h3 {
@@ -894,8 +899,7 @@ Usage (In Ghost editor):
 
 .post-full-content h4 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: 3rem;
 }
 @media (max-width: 500px) {
     .post-full-content h4 {
@@ -930,7 +934,6 @@ Usage (In Ghost editor):
 .post-full-content h6 {
     margin: 0.5em 0 0.2em 0;
     font-size: 2.3rem;
-    font-weight: 700;
 }
 @media (max-width: 500px) {
     .post-full-content h6 {
@@ -1224,6 +1227,7 @@ Usage (In Ghost editor):
 .post-full-comments {
     margin: 0 auto;
     max-width: 840px;
+    padding: 0 100px;
 }
 
 
