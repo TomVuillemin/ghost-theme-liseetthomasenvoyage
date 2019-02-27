@@ -9,7 +9,6 @@ Ghost theme used for liseetthomasenvoyage blog. Based on Ghost's Casper default 
 - Fancyboxes applied to all images on articles
 
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper. If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
 
 
 
